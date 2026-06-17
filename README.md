@@ -12,18 +12,6 @@
 
 </div>
 
----
-
-## 📸 Screenshots
-
-### Home Page
-![Home](images/home.png)
-
-### Upload & Process PDF
-![Upload](images/upload.png)
-
-### Answer Generation
-![Answer](images/answer.png)
 
 ---
 
@@ -108,6 +96,19 @@ Reading long PDF documents to find specific information is time-consuming. This 
 5. Run the app
 
         streamlit run app.py
+
+---
+
+## 📸 Screenshots
+
+### Home Page
+![Home](images/home.png)
+
+### Upload & Process PDF
+![Upload](images/upload.png)
+
+### Answer Generation
+![Answer](images/answer.png)
 
 ---
 
