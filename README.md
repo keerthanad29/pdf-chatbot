@@ -14,6 +14,19 @@
 
 ---
 
+## 📸 Screenshots
+
+### Home Page
+![Home](images/home.png)
+
+### Upload & Process PDF
+![Upload](images/upload.png)
+
+### Answer Generation
+![Answer](images/answer.png)
+
+---
+
 ## 📌 Problem Statement
 
 Reading long PDF documents to find specific information is time-consuming. This project builds an **AI-powered Q&A chatbot** that lets users upload any PDF and ask questions in natural language — getting accurate, context-aware answers instantly using **RAG (Retrieval Augmented Generation)** architecture.
@@ -34,23 +47,20 @@ Reading long PDF documents to find specific information is time-consuming. This 
 
 ## 🗂️ Project Structure
 
-```
-pdf-chatbot/
-│
-├── app.py              # Main Streamlit application
-├── requirements.txt    # Dependencies
-├── .env                # API keys (not uploaded)
-├── .gitignore
-└── README.md
-```
+    pdf-chatbot/
+    │
+    ├── app.py              # Main Streamlit application
+    ├── requirements.txt    # Dependencies
+    ├── images/             # Screenshots
+    ├── .env                # API keys (not uploaded)
+    ├── .gitignore
+    └── README.md
 
 ---
 
 ## 🔄 RAG Pipeline
 
-```
-Upload PDF → Extract Text → Split Chunks → TF-IDF Search → LLaMA 3.1 → Answer
-```
+    Upload PDF → Extract Text → Split Chunks → TF-IDF Search → LLaMA 3.1 → Answer
 
 1. **Upload PDF** — PyPDF2 extracts text from document
 2. **Split Chunks** — LangChain splits text into 1000-word chunks
@@ -77,38 +87,39 @@ Upload PDF → Extract Text → Split Chunks → TF-IDF Search → LLaMA 3.1 →
 
 ## ⚙️ How to Run
 
-```bash
-# 1. Clone the repository
-git clone https://github.com/keerthanad29/pdf-chatbot.git
-cd pdf-chatbot
+1. Clone the repository
 
-# 2. Create virtual environment
-python -m venv venv
-venv\Scripts\activate
+        git clone https://github.com/keerthanad29/pdf-chatbot.git
+        cd pdf-chatbot
 
-# 3. Install dependencies
-pip install -r requirements.txt
+2. Create virtual environment
 
-# 4. Add your Groq API key
-echo "GROQ_API_KEY=your_key_here" > .env
+        python -m venv venv
+        venv\Scripts\activate
 
-# 5. Run the app
-streamlit run app.py
-```
+3. Install dependencies
+
+        pip install -r requirements.txt
+
+4. Add your Groq API key in `.env` file
+
+        GROQ_API_KEY=your_key_here
+
+5. Run the app
+
+        streamlit run app.py
 
 ---
 
 ## 📦 Requirements
 
-```
-streamlit
-pypdf2
-langchain-text-splitters
-scikit-learn
-numpy
-groq
-python-dotenv
-```
+- streamlit
+- pypdf2
+- langchain-text-splitters
+- scikit-learn
+- numpy
+- groq
+- python-dotenv
 
 ---
 
